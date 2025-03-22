@@ -1,5 +1,98 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+body {
+  background: rgb(71, 126, 34);
+  align-items: center;
 }
+#theCard {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  align-items: center;
+  justify-content: center;
+}
+/* Estilos para la carta */
+/* Estilos para la carta */
+/* Estilos para la carta */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    position: relative;
+    background-color: white; /* Fondo blanco para la carta */
+    width: 200px; /* Valor por defecto */
+    height: 300px; /* Valor por defecto */
+  }
+  
+  /* Estilos para los palos */
+  .suit-diamonds,
+  .suit-hearts {
+    color: red; /* Diamantes y corazones en rojo */
+  }
+  
+  .suit-spades,
+  .suit-clubs {
+    color: black; /* Picas y tréboles en negro */
+  }
+  
+  /* Posicionamiento de los íconos en las esquinas */
+  .corner {
+    position: absolute;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .top-left {
+    top: 10px;
+    left: 10px;
+  }
+  
+  .bottom-right {
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(180deg);
+  }
+  
+  /* Estilos para el contenido central de la carta */
+  #cardContent {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  /* Estilos para los controles */
+  .controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .controls input {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .controls button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .controls button:hover {
+    background-color: #0056b3;
+  }
